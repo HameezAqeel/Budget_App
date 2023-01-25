@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+*
+{
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div.Header
+{
+  height: 40vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(assets/background.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1.8;
+
+  text-align: center;
+  color: white;
+  padding: 5vh;
+}
+
+div.Budget
+{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+div.calcBudget
+{
+  font-weight: 300;
+    font-size: 46px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+div.Income , div.Expenses
+{
+  position: relative;
+  padding: 12px;
+  text-transform: uppercase;
+  width: 20vw;
+  height: 6vh;
+  left: calc(50% - 10vw);
+}
+
+div.Income
+{
+  margin-bottom: 10px;
+  background-color: #28B9B5;
+}
+
+div.Expenses
+{
+  background-color: #FF5049;
+}
+.text
+{
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+}
+.value
+{
+  letter-spacing: 1px;
+    float: right;
+}
+div.inputBoxes
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #b3b3b3;
+  height: 10vh;
+}
+
+input,select
+{
+  height: 6vh;
+  border-radius: 5px;
+  margin: 0 1vw;
+  padding: 0 1vw;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+input#description
+{
+  width: 25vw;
+}
+
+input#value
+{
+  width: 6vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder{
+  padding-left: 0.5vw;
+  opacity: 0.6;
+}
+
+button.addBtn
+{
+  height: 5vh;
+  width: 5vh;
+  background-color: transparent;
+  border: none;
+}
+button.addBtn:hover
+{
+  cursor: pointer;
+}
+
+.addIcon
+{
+  color: rgb(106, 214, 106);
+  height: 5vh;
+  width: 5vh;
+}
+
+div.BudgetDetails
+{
+  display: flex;
+  min-height: 50vh;
+}
+
+div.IncomeDetails, div.ExpensesDetails
+{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding-top: 8vh;
+  font-size: 1.3rem;
+}
+
+div.IncomeDetails
+{
+  padding-left: 15vw;
+  padding-right: 3vw;
+}
+div.ExpensesDetails
+{
+  padding-right: 17vw;
+}
+table
+{
+  margin-top: 4vh;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tr.detailLine
+{
+  height: 6vh;
+  vertical-align: middle;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-top: 3vh;
+  box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.62);
+-webkit-box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.62);
+-moz-box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.62);
+}
+tr:nth-child(even)
+{
+  background-color: #eaeaea;
+}
+td
+{
+  margin-top: 1vh;
+}
+td.left
+{
+  float: left;
+  margin-left: 1vw;
+}
+td.right
+{
+  float: right;
+  margin-right: 1vw;
+}
